@@ -1,0 +1,96 @@
+/* ===== 전체 ===== */
+.root {
+    -fx-font-family: "Pretendard Variable", "Noto Sans KR", "Malgun Gothic", "Segoe UI", sans-serif; /* 변경된 전역 폰트 */
+    -fx-font-size: 14px;
+    -fx-background-color: #111418; /* 메인 배경 */
+    -fx-text-fill: #e8eaed;
+}
+
+/* ===== 상단/하단 바 ===== */
+.topbar, .bottombar {
+    -fx-background-color: #1b1f24;
+    -fx-border-color: #2a2f36;
+}
+.topbar { -fx-border-width: 0 0 1 0; }
+.bottombar { -fx-border-width: 1 0 0 0; }
+
+/* ===== 버튼 ===== */
+.button {
+    -fx-background-radius: 12;
+    -fx-background-color: #2a2f36;
+    -fx-text-fill: #e8eaed;
+    -fx-padding: 8 14 8 14;
+    -fx-font-size: 13px;
+}
+.button:hover { -fx-background-color: #354050; }
+
+/* ===== 리스트뷰 ===== */
+.list-view {
+    -fx-background-color: #111418;
+    -fx-control-inner-background: #111418;
+    -fx-border-color: #2a2f36;
+}
+.list-cell {
+    -fx-text-fill: #e8eaed;
+    -fx-padding: 8 12 8 12;
+}
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #2f6feb;
+    -fx-text-fill: white;
+}
+
+/* ===== 라벨 ===== */
+.label { -fx-text-fill: #e8eaed; }
+
+/* ===== 시간 라벨(고정폭 폰트) ===== */
+.time-label {
+    -fx-font-family: "JetBrains Mono", "D2Coding", "Consolas", monospace;
+    -fx-font-size: 13px;
+    -fx-text-fill: #cfd3da;
+}
+
+/* ===== 타이틀 ===== */
+.title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== 가사 영역 ===== */
+.lyric-line {
+    -fx-font-size: 15px;
+    -fx-line-spacing: 4px;
+    -fx-text-fill: #cfd3da;
+}
+.lyric-current {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== 슬라이더 ===== */
+.slider { -fx-control-inner-background: #2a2f36; }
+.slider .track {
+    -fx-background-color: #2a2f36;
+    -fx-pref-height: 4; /* 두께 키움 */
+}
+.slider .thumb {
+    -fx-background-color: #2f6feb;
+    -fx-background-radius: 50%;
+    -fx-padding: 8; /* 손잡이 크게 */
+}
+
+/* ===== 스크롤팬 ===== */
+.scroll-pane { -fx-background: #111418; -fx-control-inner-background: #111418; }
+.scroll-pane .viewport { -fx-background-color: #111418; }
+
+/* ===== 스플릿팬 ===== */
+.split-pane { -fx-background-color: #111418; }
+.split-pane-divider { -fx-background-color: #2a2f36; }
+
+/* ===== 알림창(AlertDialog) ===== */
+.dialog-pane { -fx-background-color: #1b1f24; }
+.dialog-pane .header-panel { -fx-background-color: #2a2f36; -fx-text-fill: #e8eaed; }
+.dialog-pane .content.label { -fx-text-fill: #e8eaed; }
+.dialog-pane .button-bar .button { -fx-background-color: #2a2f36; -fx-text-fill: #e8eaed; }
+.dialog-pane .button-bar .button:hover { -fx-background-color: #354050; }
